@@ -16,9 +16,13 @@ public class MyConnection {
 	// private AnimalDao dao = new AnimalDaoJdbc();
 	public static Connection getConnection() throws SQLException {
 
-		String url = System.getenv("BANKLIAM_URLSQL");
-		String user = System.getenv("BANKLIAM_USERSQL");
-		String password = System.getenv("BANKLIAM_PASSWORDSQL");
+		// String url = System.getenv("BANKLIAM_URLSQL");
+		// String user = System.getenv("BANKLIAM_USERSQL");
+		// String password = System.getenv("BANKLIAM_PASSWORDSQL");
+		String url = "postgres://postgres:postgrespw@localhost:55000";
+		String user = "postgres";
+		String password = "postgrespw";
+
 		LOGGER.trace("Testing connection...");
 		return DriverManager.getConnection(url, user, password);
 	}

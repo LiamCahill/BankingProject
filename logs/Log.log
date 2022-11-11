@@ -651,3 +651,16 @@ java.sql.SQLException: The url cannot be null
 	at com.revature.controller.Controller.console(Controller.java:30)
 	at com.revature.controller.Main.main(Main.java:6)
 2022-11-10 12:52:32 ERROR AccountDaoJdbc:143 - java.sql.SQLException: The url cannot be null
+2022-11-10 20:12:40 TRACE Controller:26 - Attempting to connect to ONEBANK.
+2022-11-10 20:12:40 TRACE MyConnection:26 - Testing connection...
+2022-11-10 20:12:40 ERROR Controller:31 - Issue connecting to ONEBANK.
+java.sql.SQLException: No suitable driver found for postgres://postgres:postgrespw@localhost:55000
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.controller.MyConnection.getConnection(MyConnection.java:27)
+	at com.revature.controller.Controller.console(Controller.java:28)
+	at com.revature.controller.Main.main(Main.java:6)
+2022-11-10 20:12:52 TRACE MyConnection:26 - Testing connection...
+2022-11-10 20:12:52 ERROR AccountDaoJdbc:167 - java.sql.SQLException: No suitable driver found for postgres://postgres:postgrespw@localhost:55000
+2022-11-10 20:12:52 TRACE MyConnection:26 - Testing connection...
+2022-11-10 20:12:52 ERROR AccountDaoJdbc:167 - java.sql.SQLException: No suitable driver found for postgres://postgres:postgrespw@localhost:55000
