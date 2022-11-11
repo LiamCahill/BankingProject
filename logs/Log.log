@@ -624,3 +624,30 @@ java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
 2018-11-26 01:47:26 INFO  AccountDaoJdbc:48 - Made it through the try.
 2018-11-26 01:47:38 TRACE Controller:30 - Attempting to connect to ONEBANK.
 2018-11-26 01:47:39 INFO  Controller:33 - You are connected!
+2022-11-10 12:51:39 TRACE Controller:28 - Attempting to connect to ONEBANK.
+2022-11-10 12:51:39 ERROR Controller:33 - Issue connecting to ONEBANK.
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.controller.MyConnection.getConnection(MyConnection.java:26)
+	at com.revature.controller.Controller.console(Controller.java:30)
+	at com.revature.controller.Main.main(Main.java:6)
+2022-11-10 12:51:50 TRACE Controller:28 - Attempting to connect to ONEBANK.
+2022-11-10 12:51:50 ERROR Controller:33 - Issue connecting to ONEBANK.
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.controller.MyConnection.getConnection(MyConnection.java:26)
+	at com.revature.controller.Controller.console(Controller.java:30)
+	at com.revature.controller.Main.main(Main.java:6)
+2022-11-10 12:51:56 ERROR AccountDaoJdbc:171 - java.sql.SQLException: The url cannot be null
+2022-11-10 12:51:56 ERROR AccountDaoJdbc:171 - java.sql.SQLException: The url cannot be null
+2022-11-10 12:52:11 TRACE Controller:28 - Attempting to connect to ONEBANK.
+2022-11-10 12:52:11 ERROR Controller:33 - Issue connecting to ONEBANK.
+java.sql.SQLException: The url cannot be null
+	at java.sql.DriverManager.getConnection(DriverManager.java:649)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.controller.MyConnection.getConnection(MyConnection.java:26)
+	at com.revature.controller.Controller.console(Controller.java:30)
+	at com.revature.controller.Main.main(Main.java:6)
+2022-11-10 12:52:32 ERROR AccountDaoJdbc:143 - java.sql.SQLException: The url cannot be null

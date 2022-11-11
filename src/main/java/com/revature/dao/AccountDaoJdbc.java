@@ -1,15 +1,10 @@
 package com.revature.dao;
 
-import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
-import java.util.TreeSet;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import org.apache.log4j.Logger;
 import com.revature.controller.MyConnection;
@@ -18,7 +13,8 @@ import com.revature.model.Account;
 public class AccountDaoJdbc implements AccountDao {
 	private static Logger LOGGER = Logger.getLogger(AccountDaoJdbc.class);
 
-	private Account account = new Account();
+	// Removed the below line to correct for compilation errors.
+	// private Account account = new Account();
 
 	@Override
 	public boolean viewTransactions(Account account) {
