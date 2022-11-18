@@ -29,6 +29,7 @@ public class Controller {
 			LOGGER.info("You are connected!");
 		} catch (SQLException e) {
 			LOGGER.error("Issue connecting to ONEBANK.", e);
+			System.exit(0);
 		}
 
 		System.out.println("Please select an option from the following list:");
