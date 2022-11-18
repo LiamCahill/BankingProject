@@ -702,3 +702,12 @@ java.sql.SQLException: No suitable driver found for postgres://postgres:postgres
 	at com.revature.controller.MyConnection.getConnection(MyConnection.java:27)
 	at com.revature.controller.Controller.console(Controller.java:28)
 	at com.revature.controller.Main.main(Main.java:6)
+2022-11-18 13:26:04 TRACE Controller:26 - Attempting to connect to ONEBANK.
+2022-11-18 13:26:04 TRACE MyConnection:26 - Testing connection...
+2022-11-18 13:26:04 ERROR Controller:31 - Issue connecting to ONEBANK.
+java.sql.SQLException: No suitable driver found for postgres://postgres:postgrespw@localhost:55000
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:702)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.revature.controller.MyConnection.getConnection(MyConnection.java:27)
+	at com.revature.controller.Controller.console(Controller.java:28)
+	at com.revature.controller.Main.main(Main.java:6)

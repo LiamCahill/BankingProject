@@ -3,12 +3,7 @@ package com.revature.controller;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
 import org.apache.log4j.Logger;
-
-//import oracle.jdbc.logging.annotations.Log;
-
-//import org.apache.log4j.Logger;
 
 public class MyConnection {
 	private static final Logger LOGGER = Logger.getLogger(MyConnection.class);
@@ -19,6 +14,8 @@ public class MyConnection {
 		// String url = System.getenv("BANKLIAM_URLSQL");
 		// String user = System.getenv("BANKLIAM_USERSQL");
 		// String password = System.getenv("BANKLIAM_PASSWORDSQL");
+
+		//TODO Update the database info below to use Oracle database instead of Postgres.
 		String url = "postgres://postgres:postgrespw@localhost:55000";
 		String user = "postgres";
 		String password = "postgrespw";

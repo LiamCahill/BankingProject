@@ -17,6 +17,7 @@ public class Controller {
 
 	public void console() {
 
+		//TODO I may need to create this account before being able to log on.
 		userAccount = new Account();
 		userAccount.setEmail("dec");
 		userAccount.setPassword("lan");
