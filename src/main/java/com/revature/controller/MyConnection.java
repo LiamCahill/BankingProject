@@ -8,17 +8,15 @@ import org.apache.log4j.Logger;
 public class MyConnection {
 	private static final Logger LOGGER = Logger.getLogger(MyConnection.class);
 
-	// private AnimalDao dao = new AnimalDaoJdbc();
 	public static Connection getConnection() throws SQLException {
 
 		// String url = System.getenv("BANKLIAM_URLSQL");
 		// String user = System.getenv("BANKLIAM_USERSQL");
 		// String password = System.getenv("BANKLIAM_PASSWORDSQL");
 
-		//TODO Update the database info below to use Oracle database instead of Postgres.
-		String url = "postgres://postgres:postgrespw@localhost:55000";
-		String user = "postgres";
-		String password = "postgrespw";
+		String url = "jdbc:postgresql://localhost:5455/postgres";
+		String user = "postgresUser";
+		String password = "postgresPW";
 
 		LOGGER.trace("Testing connection...");
 		return DriverManager.getConnection(url, user, password);

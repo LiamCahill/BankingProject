@@ -110,7 +110,7 @@ public class AccountDaoJdbc implements AccountDao {
 		try (Connection connection = MyConnection.getConnection()) {
 			int index = 0;
 
-			String sql1 = "SELECT * FROM ACCOUNT WHERE A_EMAIL = ?";
+			String sql1 = "SELECT * FROM clients WHERE email = ?";
 			PreparedStatement statement1 = connection.prepareStatement(sql1);
 			statement1.setString(1, account.getEmail());
 			if (statement1.executeUpdate() > 0) {
@@ -119,7 +119,7 @@ public class AccountDaoJdbc implements AccountDao {
 				return 0;
 			} else {
 
-				String sql = "INSERT INTO ACCOUNT(A_BALANCE, A_EMAIL, A_PASSWORD) VALUES (?,?,?)";
+				String sql = "INSERT INTO clients(name, email, password) VALUES (?,?,?)";
 				System.out.println("before SQL call");
 				PreparedStatement statement = connection.prepareStatement(sql);
 
