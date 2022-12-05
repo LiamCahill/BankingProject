@@ -1,6 +1,7 @@
 package com.revature.dao;
 
 import java.sql.Connection;
+import java.time.LocalDate;
 import java.util.Set;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -44,7 +45,7 @@ public class ClientDAOJDBC implements ClientDAO {
                 statement.setString(++index, client.getName());
                 statement.setString(++index, client.getEmail());
                 statement.setString(++index, client.getPassword());
-                statement.setDate(++index, (Date) client.getDOB());
+                statement.setDate(++index, Date.valueOf(client.getDOB()));
                 statement.setInt(++index, client.getBalance());
 
 

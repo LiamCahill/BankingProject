@@ -1,5 +1,6 @@
 package com.revature.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
@@ -8,15 +9,15 @@ public class Client {
     private String email;
     private String phoneNumber;
     private String password;
-    private Date DOB;
+    private LocalDate DOB;
     private int number_of_accounts;
     private int balance;
 
 
-    Client(){
+    public Client(){
     };
 
-    public Client(String name, String email, String phoneNumber, String password, Date DOB, int number_of_accounts, int balance) {
+    public Client(String name, String email, String phoneNumber, String password, LocalDate DOB, int number_of_accounts, int balance) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -58,11 +59,11 @@ public class Client {
         this.password = password;
     }
 
-    public Date getDOB() {
+    public LocalDate getDOB() {
         return DOB;
     }
 
-    public void setDOB(Date DOB) {
+    public void setDOB(LocalDate DOB) {
         this.DOB = DOB;
     }
 
